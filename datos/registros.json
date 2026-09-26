@@ -12,5 +12,19 @@
         "altura": 1.64,
         "imc": 24.17,
         "categoria": "Peso normal"
+    },
+    {
+        "nombre": "Ana",
+        "peso": 56.0,
+        "altura": 1.4,
+        "imc": 28.57,
+        "categoria": "Sobrepeso"
+    },
+    {
+        "nombre": "Antonia",
+        "peso": 59.0,
+        "altura": 1.65,
+        "imc": 21.67,
+        "categoria": "Peso normal"
     }
 ]
