@@ -1,3 +1,5 @@
+from imc import calcular_imc, clasificar_imc
+
 print("================================")
 print("       CALCULADORA DE IMC")
 print("================================")
@@ -16,19 +18,9 @@ while altura <= 0:
     print("La altura debe ser mayor que 0.")
     altura = float(input("Ingrese nuevamente la altura: "))
 
-imc = peso / (altura * altura)
+imc = calcular_imc(peso, altura)
 
-if imc < 18.5:
-    categoria = "Bajo peso"
-
-elif imc < 25:
-    categoria = "Peso normal"
-
-elif imc < 30:
-    categoria = "Sobrepeso"
-
-else:
-    categoria = "Obesidad"
+categoria = clasificar_imc(imc)
 
 print("\nRESULTADO")
 print("Nombre:", nombre)
