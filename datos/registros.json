@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "Carla",
+        "peso": 68.0,
+        "altura": 1.5,
+        "imc": 30.22,
+        "categoria": "Obesidad"
+    },
+    {
+        "nombre": "Gretel",
+        "peso": 65.0,
+        "altura": 1.64,
+        "imc": 24.17,
+        "categoria": "Peso normal"
+    }
+]

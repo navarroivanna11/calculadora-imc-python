@@ -1,4 +1,5 @@
 from imc import calcular_imc, clasificar_imc
+from historial import guardar_registro
 
 print("================================")
 print("       CALCULADORA DE IMC")
@@ -21,6 +22,16 @@ while altura <= 0:
 imc = calcular_imc(peso, altura)
 
 categoria = clasificar_imc(imc)
+
+registro = {
+    "nombre": nombre,
+    "peso": peso,
+    "altura": altura,
+    "imc": imc,
+    "categoria": categoria
+}
+
+guardar_registro(registro)
 
 print("\nRESULTADO")
 print("Nombre:", nombre)
