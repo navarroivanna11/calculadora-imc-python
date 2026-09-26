@@ -5,8 +5,14 @@ print("================================")
 nombre = input("Ingrese su nombre: ")
 
 peso = float(input("Ingrese su peso en kg: "))
+while peso <= 0:
+    print("El peso debe ser mayor que 0.")
+    peso = float(input("Ingrese nuevamente el peso: "))
 
 altura = float(input("Ingrese su altura en metros: "))
+while altura <= 0:
+    print("La altura debe ser mayor que 0.")
+    altura = float(input("Ingrese nuevamente la altura: "))
 
 imc = peso / (altura * altura)
 
